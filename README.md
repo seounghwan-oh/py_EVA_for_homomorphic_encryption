@@ -75,6 +75,17 @@ The examples use EVA's Python APIs. To install dependencies with PIP:
 python3 -m pip install -r examples/requirements.txt
 ```
 
+To run for example the homomorphic encryption operation example in EVA/examples:
+```
+cd examples/
+python3 example.py
+```
+This example has "a" and "b" as input variables.
+a: A randomized array of 100,000 real numbers between 1000 and 10000.
+b: A randomized array of 100,000 real numbers between 0.001 and 0.01.
+This will compile and run homomorphic evaluations of 5*(a^5)*(b^4) operation example.
+In this example, the error between the result of calculating encrypted a and b and the result of calculating original a and b is less than 0.01%.
+
 To run for example the image processing example in EVA/examples:
 ```
 cd examples/
