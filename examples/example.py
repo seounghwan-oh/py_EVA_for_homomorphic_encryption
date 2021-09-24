@@ -14,8 +14,8 @@ with poly:
     b = Input("b")
     Output("result", 5*(a**5)*(b**4))
 
-poly.set_output_ranges(128)
-poly.set_input_scales(128)
+poly.set_output_ranges(64)
+poly.set_input_scales(64)
 
 compiler = CKKSCompiler()
 poly, params, signature = compiler.compile(poly)
